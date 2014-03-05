@@ -40,6 +40,10 @@ filetype plugin indent on
 set encoding=utf-8
 
 " Shortcut for nerdtree
-noremap <Leader>n :NERDTree <CR>
+map <C-n> :NERDTreeToggle<CR>
 
-:execute pathogen#infect()
+" Shortcut for Ctrlp
+map <C-p> :CtrlP<CR>
+
+execute pathogen#infect()
+
