@@ -1,6 +1,9 @@
 " Enable syntax highlighting
 syntax on
 
+" tell vim I'm using a dark background
+set background=dark
+
 "Better command-line completion
 set wildmenu
 
@@ -36,5 +39,7 @@ let mapleader=","
 filetype plugin indent on
 set encoding=utf-8
 
+" Shortcut for nerdtree
+noremap <Leader>n :NERDTree <CR>
 
 :execute pathogen#infect()
