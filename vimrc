@@ -1,28 +1,15 @@
-" Enable syntax highlighting
-syntax on
-
-" tell vim I'm using a dark background
-set background=dark
-
-"Better command-line completion
-set wildmenu
-
-" Show partial commands in the last line of the screen
-set showcmd
-
-" Highlight searches
-set hlsearch
-
-" Use case insensitive search except when using capital letters
-set ignorecase
+syntax enable                   " Enable syntax highlighting
+filetype plugin indent on       " Enable filetype options
+set encoding=utf-8              " Set file encoding
+set background=dark             " tell vim I'm using a dark background
+set number                      " Enable numbers for lines
+set wildmenu                    "Better command-line completion
+set showcmd                     " Show partial commands in the last line of the screen
+set hlsearch                    " Highlight searches
+set ignorecase                  " Use case insensitive search except when using capital letters
 set smartcase
-
-" Allow backspacing over autoindent, linebreaks, and start of insert
-set backspace=indent,eol,start
-
-" Instead of failing a command because of unsaved changes, instead raise a
-" dialogue asking if you wish to save changed files.
-set confirm
+set backspace=indent,eol,start  " Allow backspacing over autoindent, linebreaks, and start of insert
+set confirm                     " Instead of failing a command because of unsaved changes, instead raise a dialogue asking if you wish to save changed files.
 
 " Indentation settings for using 2 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
@@ -30,20 +17,20 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
-" remaps escape to jk
-inoremap jk <ESC>
-
 " set leader key to comma
-let mapleader=","
+let mapleader=","               
+   
+" remaps escape to jk for easy escape
+inoremap jk <ESC> 
 
-filetype plugin indent on
-set encoding=utf-8
+" toggles line number style
+nnoremap <Leader>n :Numbers<CR>   
 
 " Shortcut for nerdtree
-map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>   
 
 " Shortcut for Ctrlp
-map <C-p> :CtrlP<CR>
+map <C-p> :CtrlP<CR>            
 
 execute pathogen#infect()
 
