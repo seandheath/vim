@@ -13,8 +13,8 @@ set confirm                     " Instead of failing a command because of unsave
 
 " Indentation settings for using 2 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 " set leader key to comma
@@ -31,6 +31,9 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Shortcut for Ctrlp
 map <C-p> :CtrlP<CR>            
+
+" Allow saving of files as sudo when I forget to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
 
 execute pathogen#infect()
 
