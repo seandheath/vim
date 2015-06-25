@@ -1,4 +1,4 @@
-syntax enable                   " Enable syntax highlighting
+syntax on                       " Enable syntax highlighting
 filetype plugin indent on       " Enable filetype options
 set encoding=utf-8              " Set file encoding
 set background=dark             " tell vim I'm using a dark background
@@ -19,12 +19,9 @@ set expandtab
 
 " set leader key to comma
 let mapleader=","               
-   
+
 " remaps escape to jk for easy escape
 inoremap jk <ESC> 
-
-" toggles line number style
-nnoremap <Leader>n :Numbers<CR>   
 
 " Shortcut for nerdtree
 map <C-n> :NERDTreeToggle<CR>   
