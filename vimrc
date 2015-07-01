@@ -17,11 +17,13 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
+" Activate RainbowParentheses
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 " set leader key to comma
 let mapleader=","               
-
-" remaps escape to jk for easy escape
-inoremap jk <ESC> 
 
 " Shortcut for nerdtree
 map <C-n> :NERDTreeToggle<CR>   
