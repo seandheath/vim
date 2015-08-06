@@ -1,17 +1,18 @@
-#hi.
+#hi.  
 
 This is my vim setup! I use a handful of plugins:
 
-1.  [Ctrl-P](https://github.com/kien/ctrlp.vim)
-2.  [EasyMotion](https://github.com/easymotion/vim-easymotion)
-3.  [MatchTag](https://github.com/gregsexton/MatchTag)
-4.  [NerdTree](https://github.com/scrooloose/nerdtree.git)
-5.  [Numbers](https://github.com/myusuf3/numbers.vim.git)
-6.  [Pathogen](https://github.com/tpope/vim-pathogen)
-7.  [RainbowParentheses](https://github.com/kien/rainbow_parentheses.vim.git)
-8.  [Scala](https://github.com/derekwyatt/vim-scala.git)
-9.  [Surround](https://github.com/tpope/vim-surround.git)
-10. [YouCompleteMe](http://github.com/Valloric/YouCompleteMe.git)
+* [Ctrl-P](https://github.com/kien/ctrlp.vim)
+* [Go](https://github.com/fatih/vim-go.git)
+* [EasyMotion](https://github.com/easymotion/vim-easymotion)
+* [MatchTag](https://github.com/gregsexton/MatchTag)
+* [NerdTree](https://github.com/scrooloose/nerdtree.git)
+* [Numbers](https://github.com/myusuf3/numbers.vim.git)
+* [Pathogen](https://github.com/tpope/vim-pathogen)
+* [RainbowParentheses](https://github.com/kien/rainbow_parentheses.vim.git)
+* [Scala](https://github.com/derekwyatt/vim-scala.git)
+* [Surround](https://github.com/tpope/vim-surround.git)
+* [YouCompleteMe](http://github.com/Valloric/YouCompleteMe.git)
 
 ### Installation:
 Simply clone the repository into the ~/.vim folder:
