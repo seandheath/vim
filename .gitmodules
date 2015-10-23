@@ -22,9 +22,6 @@
 [submodule "bundle/vim-pathogen"]
 	path = bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen
-[submodule "bundle/vim-youcompleteme"]
-	path = bundle/vim-youcompleteme
-	url = http://github.com/Valloric/YouCompleteMe.git
 [submodule "bundle/vim-matchtag"]
 	path = bundle/vim-matchtag
 	url = https://github.com/gregsexton/MatchTag.git
