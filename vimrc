@@ -22,6 +22,17 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" Setup for Airline
+let g:airline#extensions#tabline#enabled=1
+set laststatus=2
+
+" Cursor configuration
+let &t_ti.="\e[1 q"
+let &t_SI.="\e[5 q"
+let &t_EI.="\e[1 q"
+let &t_te.="\e[0 q"
+
 " set leader key to comma
 let mapleader=","               
 
