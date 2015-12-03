@@ -30,6 +30,23 @@ au Syntax * RainbowParenthesesLoadBraces
 nmap <F8> :TagbarToggle<CR>
 nmap <leader>t :TagbarOpen fj<CR>
 
+" Set SuperTab completion to be sexier
+set omnifunc=syntaxcomplete#Complete
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_DisplayMode = 1
+let OmniCpp_ShowScopeInAbbr = 0 " Don't show scope
+let OmniCpp_ShowPrototypeInAbbr = 1 " Show the prototype in the popup
+let OmniCpp_ShowAccess = 1 " Show access in the popup
+let OmniCpp_SelectFirstItem = 1 " Select the first item in the popup
+set completeopt=menuone,menu,longest
+let g:SuperTabDefaultCompletionType = "<C-X><C-O>" " Use the Omni Completion
+highlight clear
+highlight Pmenu ctermfg=0 ctermbg=2
+highlight PmenuSel ctermfg=0 ctermbg=7
+highlight PmenuSbar ctermfg=7 ctermbg=0
+highlight PmenuThumb ctermfg=0 ctermbg=7
+
+
 " Set a color at the column 80 to keep lines the right length
 set colorcolumn=80
 
