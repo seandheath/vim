@@ -23,6 +23,12 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
+" Alias for Tagbar
+nmap <F8> :TagbarToggle<CR>
+
+" Set a color at the column 80 to keep lines the right length
+set colorcolumn=80
+
 " Setup for Airline
 let g:airline#extensions#tabline#enabled=1
 set laststatus=2
