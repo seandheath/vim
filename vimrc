@@ -11,6 +11,11 @@ set smartcase
 set backspace=indent,eol,start  " Allow backspacing over autoindent, linebreaks, and start of insert
 set confirm                     " Instead of failing a command because of unsaved changes, instead raise a dialogue asking if you wish to save changed files.
 
+" fix xterm colors
+if &term == "xterm"
+  set term=xterm-256color
+endif
+
 " Indentation settings for using 2 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
 set shiftwidth=2
@@ -77,12 +82,6 @@ set colorcolumn=80
 " Setup for Airline
 let g:airline#extensions#tabline#enabled=1
 set laststatus=2
-
-" Cursor configuration
-let &t_ti.="\e[1 q"
-let &t_SI.="\e[5 q"
-let &t_EI.="\e[1 q"
-let &t_te.="\e[0 q"
 
 " Shortcut for nerdtree
 map <C-n> :NERDTreeToggle<CR>   
