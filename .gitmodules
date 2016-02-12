@@ -46,3 +46,6 @@
 [submodule "bundle/vim-omnicppcomplete"]
 	path = bundle/vim-omnicppcomplete
 	url = https://github.com/vim-scripts/OmniCppComplete.git
+[submodule "bundle/vim-todotxt"]
+	path = bundle/vim-todotxt
+	url = https://github.com/freitass/todo.txt-vim.git

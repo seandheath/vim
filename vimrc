@@ -19,12 +19,36 @@ set expandtab
 
 " set leader key to comma
 let mapleader=","               
+let maplocalleader="\\"
+
+" Allow to insert line without entering insert mode, using enter and shift ent
+nmap <S-Enter> O<Esc>
+nmap <Enter> o<Esc>
 
 " Activate RainbowParentheses
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" todo.txt aliases
+nmap <leader>a :call todo#txt#prioritize_add('A')<CR>
+nmap <leader>b :call todo#txt#prioritize_add('B')<CR>
+nmap <leader>c :call todo#txt#prioritize_add('C')<CR>
+nmap <leader>d :call todo#txt#prioritize_add('D')<CR>
+nmap <leader>w :call todo#txt#prioritize_add('W')<CR>
+nmap <leader>dd A due:<Esc>:call DueDate(0)<CR>
+nmap <leader>d1 A due:<Esc>:call DueDate(1)<CR>
+nmap <leader>d2 A due:<Esc>:call DueDate(2)<CR>
+nmap <leader>d3 A due:<Esc>:call DueDate(3)<CR>
+nmap <leader>d4 A due:<Esc>:call DueDate(4)<CR>
+nmap <leader>d5 A due:<Esc>:call DueDate(5)<CR>
+nmap <leader>d6 A due:<Esc>:call DueDate(6)<CR>
+nmap <leader>d7 A due:<Esc>:call DueDate(7)<CR>
+
+function DueDate(duedate)
+  exe ":normal a" . strftime("%F", localtime() + ((24 * 3600) * a:duedate))
+endfunction
 
 " Alias for Tagbar
 nmap <F8> :TagbarToggle<CR>
