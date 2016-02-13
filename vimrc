@@ -36,25 +36,6 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-" todo.txt aliases
-nmap <leader>a :call todo#txt#prioritize_add('A')<CR>
-nmap <leader>b :call todo#txt#prioritize_add('B')<CR>
-nmap <leader>c :call todo#txt#prioritize_add('C')<CR>
-nmap <leader>d :call todo#txt#prioritize_add('D')<CR>
-nmap <leader>w :call todo#txt#prioritize_add('W')<CR>
-nmap <leader>dd A due:<Esc>:call DueDate(0)<CR>
-nmap <leader>d1 A due:<Esc>:call DueDate(1)<CR>
-nmap <leader>d2 A due:<Esc>:call DueDate(2)<CR>
-nmap <leader>d3 A due:<Esc>:call DueDate(3)<CR>
-nmap <leader>d4 A due:<Esc>:call DueDate(4)<CR>
-nmap <leader>d5 A due:<Esc>:call DueDate(5)<CR>
-nmap <leader>d6 A due:<Esc>:call DueDate(6)<CR>
-nmap <leader>d7 A due:<Esc>:call DueDate(7)<CR>
-
-function DueDate(duedate)
-  exe ":normal a" . strftime("%F", localtime() + ((24 * 3600) * a:duedate))
-endfunction
-
 " Alias for Tagbar
 nmap <F8> :TagbarToggle<CR>
 nmap <leader>t :TagbarOpen fj<CR>
@@ -92,5 +73,21 @@ map <C-p> :CtrlP<CR>
 " Allow saving of files as sudo when I forget to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
 
-execute pathogen#infect()
-
+" This is where I add all my plugins
+call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
+Plug 'flazz/vim-colorschemes'
+Plug 'kien/ctrlp.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'xolox/vim-easytags'
+Plug 'fatih/vim-go'
+Plug 'valloric/matchtagalways'
+Plug 'xolox/vim-misc'
+Plug 'scrooloose/nerdtree'
+Plug 'myusuf3/numbers.vim'
+Plug 'vim-scripts/omnicppcomplete'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'derekwyatt/vim-scala'
+Plug 'tpope/vim-surround'
+Plug 'majutsushi/tagbar'
+call plug#end()
