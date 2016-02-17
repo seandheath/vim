@@ -44,12 +44,13 @@ nmap <leader>t :TagbarOpen fj<CR>
 set omnifunc=syntaxcomplete#Complete
 let OmniCpp_GlobalScopeSearch = 1
 let OmniCpp_DisplayMode = 1
-let OmniCpp_ShowScopeInAbbr = 0 " Don't show scope
+let OmniCpp_ShowScopeInAbbr = 1 " Don't show scope
 let OmniCpp_ShowPrototypeInAbbr = 1 " Show the prototype in the popup
 let OmniCpp_ShowAccess = 1 " Show access in the popup
 let OmniCpp_SelectFirstItem = 1 " Select the first item in the popup
 set completeopt=menuone,menu,longest
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>" " Use the Omni Completion
+let g:SuperTabDefaultCompletionType = "context" " Use the Omni Completion
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
 highlight clear
 highlight Pmenu ctermfg=0 ctermbg=2
 highlight PmenuSel ctermfg=0 ctermbg=7
@@ -88,6 +89,7 @@ Plug 'myusuf3/numbers.vim'
 Plug 'vim-scripts/omnicppcomplete'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'derekwyatt/vim-scala'
+Plug 'ervandew/supertab'
 Plug 'tpope/vim-surround'
 Plug 'majutsushi/tagbar'
 call plug#end()
