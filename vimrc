@@ -89,8 +89,9 @@ Plug 'myusuf3/numbers.vim'
 Plug 'vim-scripts/omnicppcomplete'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'derekwyatt/vim-scala'
-Plug 'ervandew/supertab'
 Plug 'tpope/vim-surround'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/syntastic'
+Plug 'valloric/youcompleteme', {'do': './install.py --clang-completer --gocode-completer'}
+Plug 'sirver/ultisnips'
 call plug#end()
