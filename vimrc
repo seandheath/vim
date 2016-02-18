@@ -92,4 +92,5 @@ Plug 'derekwyatt/vim-scala'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-surround'
 Plug 'majutsushi/tagbar'
+Plug 'scrooloose/syntastic'
 call plug#end()
