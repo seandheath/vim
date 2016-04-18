@@ -41,6 +41,7 @@ nmap <F8> :TagbarToggle<CR>
 nmap <leader>t :TagbarOpen fj<CR>
 
 " Set SuperTab completion to be sexier
+"
 set omnifunc=syntaxcomplete#Complete
 let OmniCpp_GlobalScopeSearch = 1
 let OmniCpp_DisplayMode = 1
@@ -92,6 +93,8 @@ Plug 'derekwyatt/vim-scala'
 Plug 'tpope/vim-surround'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/syntastic'
-Plug 'valloric/youcompleteme', {'do': './install.py --clang-completer --gocode-completer'}
 Plug 'sirver/ultisnips'
+Plug 'lervag/vimtex'
+Plug 'ervandew/supertab'
+Plug '/szw/vim-tags'
 call plug#end()
