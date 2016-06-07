@@ -78,7 +78,6 @@ cmap w!! w !sudo tee > /dev/null %
 " This is where I add all my plugins
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
-Plug 'flazz/vim-colorschemes'
 Plug 'kien/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'xolox/vim-easytags'
