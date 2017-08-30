@@ -75,6 +75,10 @@ map <C-p> :CtrlP<CR>
 " Allow saving of files as sudo when I forget to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
 
+" Configuration for vim-notes
+let g:notes_directories = ['~/personal/vimnotes']
+let g:notes_tab_indents = 0
+
 " This is where I add all my plugins
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
@@ -84,9 +88,13 @@ Plug 'scrooloose/nerdtree'
 Plug 'myusuf3/numbers.vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-markdown'
+Plug 'nelstrom/vim-markdown-folding'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/syntastic'
 Plug 'sirver/ultisnips'
 Plug 'ervandew/supertab'
 Plug '/szw/vim-tags'
+Plug 'xolox/vim-notes'
+Plug 'xolox/vim-misc'
 call plug#end()
