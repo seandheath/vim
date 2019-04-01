@@ -3,7 +3,7 @@ filetype plugin indent on       " Enable filetype options
 set encoding=utf-8              " Set file encoding
 set background=dark             " tell vim I'm using a dark background
 set number                      " Enable numbers for lines
-set wildmenu                    "Better command-line completion
+set wildmenu                    " Better command-line completion
 set showcmd                     " Show partial commands in the last line of the screen
 set hlsearch                    " Highlight searches
 set ignorecase                  " Use case insensitive search except when using capital letters
@@ -38,7 +38,7 @@ au Syntax * RainbowParenthesesLoadBraces
 
 " Alias for Tagbar
 nmap <F8> :TagbarToggle<CR>
-nmap <leader>t :TagbarOpen fj<CR>
+nmap <leader>t :TagbarToggle<CR>
 
 " Set SuperTab completion to be sexier
 "
@@ -94,4 +94,5 @@ Plug 'majutsushi/tagbar'
 Plug 'scrooloose/syntastic'
 Plug 'ervandew/supertab'
 Plug '/szw/vim-tags'
+Plug 'rust-lang/rust.vim'
 call plug#end()
