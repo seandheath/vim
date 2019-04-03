@@ -95,4 +95,5 @@ Plug 'scrooloose/syntastic'
 Plug 'ervandew/supertab'
 Plug '/szw/vim-tags'
 Plug 'rust-lang/rust.vim'
+Plug 'valloric/YouCompleteMe'
 call plug#end()
