@@ -9,3 +9,5 @@ rm -rf ~/.config/nvim/autoload
 ln -s ~/.vim/vimrc ~/.config/nvim/init.vim
 ln -s ~/.vim/autoload/ ~/.config/nvim/autoload
 vim +PlugInstall +qall > /dev/null
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py
