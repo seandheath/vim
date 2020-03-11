@@ -1,5 +1,6 @@
 syntax on                       " Enable syntax highlighting
-filetype plugin indent on       " Enable filetype options
+filetype plugin on              " Enable filetype plugin
+filetype indent on              " Enable filetype indent
 set encoding=utf-8              " Set file encoding
 set background=dark             " tell vim I'm using a dark background
 set number                      " Enable numbers for lines
@@ -10,6 +11,11 @@ set ignorecase                  " Use case insensitive search except when using 
 set smartcase
 set backspace=indent,eol,start  " Allow backspacing over autoindent, linebreaks, and start of insert
 set confirm                     " Instead of failing a command because of unsaved changes, instead raise a dialogue asking if you wish to save changed files.
+set foldlevel=99
+
+" Set latex options
+let g:tex_flavor='latex'
+let g:Tex_DefaultTargetFormat='pdf'
 
 " fix xterm colors
 if &term == "xterm"
@@ -60,6 +66,9 @@ map <C-n> :NERDTreeToggle<CR>
 " Shortcut for Ctrlp
 map <C-p> :CtrlP<CR>            
 
+" Shortcut for build
+map <leader>b :!./build.sh<CR>
+
 " Allow saving of files as sudo when I forget to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
 
@@ -84,4 +93,7 @@ Plug '/szw/vim-tags'
 Plug 'rust-lang/rust.vim'
 Plug 'valloric/YouCompleteMe'
 Plug 'w0rp/ale'
+Plug 'vim-latex/vim-latex'
 call plug#end()
+
+colors slate
