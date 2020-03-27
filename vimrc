@@ -67,7 +67,7 @@ map <C-n> :NERDTreeToggle<CR>
 map <C-p> :CtrlP<CR>            
 
 " Shortcut for build
-map <leader>b :!./build.sh<CR>
+map <leader>b :!./build.sh<CR><CR>
 
 " Allow saving of files as sudo when I forget to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
