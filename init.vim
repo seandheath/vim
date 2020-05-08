@@ -24,8 +24,8 @@ endif
 
 " Indentation settings for using 2 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 
 " set leader key to comma
@@ -72,12 +72,8 @@ map <leader>b :!./build.sh<CR><CR>
 " Allow saving of files as sudo when I forget to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
 
-" Configuration for vim-notes
-let g:notes_directories = ['~/personal/vimnotes']
-let g:notes_tab_indents = 0
-
 " This is where I add all my plugins
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/site/autoload')
 Plug 'vim-airline/vim-airline'
 Plug 'kien/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
