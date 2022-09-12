@@ -84,12 +84,10 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-markdown'
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'majutsushi/tagbar'
-Plug 'scrooloose/syntastic'
 Plug '/szw/vim-tags'
 Plug 'rust-lang/rust.vim'
-Plug 'valloric/YouCompleteMe'
-Plug 'w0rp/ale'
 Plug 'vim-latex/vim-latex'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 colors slate
