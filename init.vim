@@ -87,6 +87,7 @@ Plug 'majutsushi/tagbar'
 Plug '/szw/vim-tags'
 Plug 'rust-lang/rust.vim'
 Plug 'vim-latex/vim-latex'
+Plug 'LnL7/vim-nix'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
